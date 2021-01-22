@@ -1,3 +1,11 @@
+.container {
+  max-width: 1228px;
+  margin: auto;
+  text-align: center;
+  padding: 0 1.6rem;
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +15,7 @@
 
 body {
   font-family: "Dosis", sans-serif;
+  color: #fff;
   line-height: 1.6;
 }
 
@@ -20,5 +29,99 @@ ul {
 
 img {
   width: 100%;
+}
+
+#main-nav {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  background: #333;
+  padding-top: 1rem;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+#main-nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-nav .logo {
+  font-family: "Eczar", serif;
+  font-size: 2rem;
+}
+
+#main-nav .logo span {
+  color: #f3971f;
+}
+
+#main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-nav ul li {
+  padding: 1rem 1.5rem;
+}
+
+#main-nav ul li a {
+  color: #fff;
+}
+
+#main-nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  background: #f3971f;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+#main-nav ul li a:hover::after {
+  width: 100%;
+}
+
+#main-nav .burger {
+  display: none;
+}
+
+#home {
+  min-height: 100vh;
+  background: url("../images/bg.jpg") no-repeat center right/cover;
+  position: relative;
+}
+
+#home::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#home .header-content {
+  padding-top: 20%;
+  text-align: left;
+  position: absolute;
+  z-index: 3;
+}
+
+#home .header-content h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#home .header-content h1 {
+  font-size: 4rem;
+  color: #f3971f;
 }
 /*# sourceMappingURL=main.css.map */

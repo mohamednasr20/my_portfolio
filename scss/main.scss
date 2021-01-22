@@ -1,4 +1,5 @@
 @import "config";
+@import "utilities";
 
 * {
   margin: 0;
@@ -8,12 +9,12 @@
 
 body {
   font-family: "Dosis", sans-serif;
+  color: #fff;
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  //   color: #fff;
 }
 
 ul {
@@ -22,4 +23,82 @@ ul {
 
 img {
   width: 100%;
+}
+
+#main-nav {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  background: #333;
+  padding-top: 1rem;
+  transition: height 0.5s ease-in-out;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: "Eczar", serif;
+    font-size: 2rem;
+    span {
+      color: $main-color;
+    }
+  }
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem 1.5rem;
+      a {
+        color: #fff;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0.2rem;
+          background: $main-color;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .burger {
+    display: none;
+  }
+}
+
+#home {
+  min-height: 100vh;
+  background: url("../images/bg.jpg") no-repeat center right/cover;
+  position: relative;
+  &::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .header-content {
+    padding-top: 20%;
+    text-align: left;
+    position: absolute;
+    z-index: 3;
+
+    h3 {
+      color: #fff;
+      font-weight: 300;
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 4rem;
+      color: $main-color;
+    }
+  }
 }
