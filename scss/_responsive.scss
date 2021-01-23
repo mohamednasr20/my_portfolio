@@ -1,0 +1,61 @@
+@media (max-width: 576px) {
+  #main-nav {
+    .navbar {
+      ul {
+        flex-direction: column;
+        justify-content: start;
+        position: fixed;
+        background: $light-bg;
+        padding: 2rem;
+        top: 0;
+        right: 0;
+        width: 0;
+        // height: 100vh;
+        margin: 0;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        li {
+          margin-top: 1.5rem;
+          a:hover::after {
+            width: 35%;
+            margin: auto;
+          }
+        }
+      }
+
+      .active {
+        opacity: 1;
+        width: 100%;
+      }
+
+      .burger {
+        display: block;
+        transition: all 0.5s ease-in-out;
+        z-index: 3;
+      }
+
+      .toggle {
+        .line1 {
+          transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .line2 {
+          opacity: 0;
+        }
+        .line3 {
+          transform: rotate(45deg) translate(-5px, -6px);
+        }
+      }
+    }
+  }
+
+  #home {
+    .header-content {
+      h3 {
+        font-size: 1.5rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

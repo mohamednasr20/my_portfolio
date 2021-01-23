@@ -1,9 +1,65 @@
 .container {
-  max-width: 1228px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
   padding: 0 1.6rem;
   overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  #main-nav .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    position: fixed;
+    background: #353535;
+    padding: 2rem;
+    top: 0;
+    right: 0;
+    width: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  #main-nav .navbar ul li {
+    margin-top: 1.5rem;
+  }
+  #main-nav .navbar ul li a:hover::after {
+    width: 35%;
+    margin: auto;
+  }
+  #main-nav .navbar .active {
+    opacity: 1;
+    width: 100%;
+  }
+  #main-nav .navbar .burger {
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+  }
+  #main-nav .navbar .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  #main-nav .navbar .toggle .line2 {
+    opacity: 0;
+  }
+  #main-nav .navbar .toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #home .header-content h3 {
+    font-size: 1.5rem;
+  }
+  #home .header-content h1 {
+    font-size: 2.5rem;
+  }
 }
 
 * {
@@ -35,7 +91,7 @@ img {
   position: fixed;
   z-index: 9;
   width: 100%;
-  background: #333;
+  background: none;
   padding-top: 1rem;
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
@@ -89,6 +145,15 @@ img {
 
 #main-nav .burger {
   display: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#main-nav .burger .line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #fff;
 }
 
 #home {
@@ -108,19 +173,28 @@ img {
 }
 
 #home .header-content {
-  padding-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
   text-align: left;
   position: absolute;
   z-index: 3;
 }
 
-#home .header-content h3 {
+#home h3 {
   color: #fff;
   font-weight: 300;
   font-size: 2rem;
 }
 
-#home .header-content h1 {
+#home h1 {
   font-size: 4rem;
   color: #f3971f;
 }
