@@ -32,14 +32,14 @@ img {
   position: fixed;
   z-index: 9;
   width: 100%;
-  background: none;
   padding-top: 1rem;
-  transition: height 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   .navbar {
     display: flex;
     justify-content: space-between;
   }
+
   .logo {
     font-family: "Eczar", serif;
     font-size: 2rem;
@@ -70,6 +70,7 @@ img {
       }
     }
   }
+
   .burger {
     display: none;
     cursor: pointer;
@@ -79,8 +80,13 @@ img {
       height: 3px;
       margin: 5px;
       background: #fff;
+      transition: all 0.4s ease-in-out;
     }
   }
+}
+
+.navbar-bg {
+  background: $light-bg;
 }
 
 // home section
