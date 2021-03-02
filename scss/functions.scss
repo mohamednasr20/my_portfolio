@@ -1,0 +1,31 @@
+// padding
+
+@for $i from 1 through 12 {
+  .p-#{$i} {
+    padding: 0.5rem * $i;
+  }
+}
+
+// padding-y
+
+@for $i from 1 through 12 {
+  .py-#{$i} {
+    padding: 0.5rem * $i 0;
+  }
+}
+
+// margin
+
+@for $i from 1 through 12 {
+  .m-#{$i} {
+    margin: 0.5rem * $i;
+  }
+}
+
+// margin-y
+
+@for $i from 1 through 12 {
+  .my-#{$i} {
+    margin: 0.5rem * $i 0;
+  }
+}

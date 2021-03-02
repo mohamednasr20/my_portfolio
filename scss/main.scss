@@ -1,6 +1,7 @@
-@import "config";
-@import "utilities";
-@import "responsive";
+@import 'config';
+@import 'utilities';
+@import 'responsive';
+@import 'functions';
 
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #fff;
   line-height: 1.6;
 }
@@ -41,8 +42,8 @@ img {
   }
 
   .logo {
-    font-family: "Eczar", serif;
-    font-size: 2rem;
+    font-family: 'Eczar', serif;
+    font-size: 2.5rem;
     span {
       color: $main-color;
     }
@@ -56,7 +57,7 @@ img {
         color: #fff;
 
         &::after {
-          content: "";
+          content: '';
           display: block;
           width: 0;
           height: 0.2rem;
@@ -86,18 +87,19 @@ img {
 }
 
 .navbar-bg {
-  background: $light-bg;
+  background: $dark-bg;
 }
 
 // home section
 
 #home {
   min-height: 100vh;
-  background: url("../images/bg.jpg") no-repeat center right/cover;
+  background: url('../images/background.jpg') no-repeat center right/cover;
+  text-align: center;
   position: relative;
   &::after {
-    content: "";
-    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    background: rgba(19, 41, 61, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -108,18 +110,25 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: left;
+    height: 100vh;
     position: absolute;
     z-index: 3;
   }
   h3 {
-    color: #fff;
+    color: $secondary-color;
     font-weight: 300;
     font-size: 2rem;
   }
   h1 {
     font-size: 4rem;
-    color: $main-color;
+    color: $light-bg;
+  }
+
+  h2 {
+    font-size: 2rem;
+    span {
+      color: $main-color;
+    }
   }
 }
