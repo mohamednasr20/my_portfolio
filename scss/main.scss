@@ -142,11 +142,18 @@ img {
 #about {
   background: $light-bg;
   color: $dark-bg;
-  display: flex;
+  .container {
+    display: flex;
+  }
   img {
     height: 50vh;
   }
   p {
     width: 50%;
   }
+}
+
+#skills {
+  background: $dark-bg;
+  color: $light-bg;
 }
