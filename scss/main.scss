@@ -138,3 +138,15 @@ img {
     }
   }
 }
+
+#about {
+  background: $light-bg;
+  color: $dark-bg;
+  display: flex;
+  img {
+    height: 50vh;
+  }
+  p {
+    width: 50%;
+  }
+}
