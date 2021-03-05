@@ -1,5 +1,12 @@
 // padding
 
+@mixin box-shadow($x, $y, $blur, $s, $c) {
+  -webkit-box-shadow: $x $y $blur $s $c;
+  -mos-box-shadow: $x $y $blur $s $c;
+  -ms-box-shadow: $x $y $blur $s $c;
+  box-shadow: $x $y $blur $s $c;
+}
+
 @for $i from 1 through 12 {
   .p-#{$i} {
     padding: 0.5rem * $i;

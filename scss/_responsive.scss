@@ -1,6 +1,9 @@
 // @media ()
 
 @media (max-width: 576px) {
+  .flex {
+    display: block;
+  }
   #main-nav {
     .navbar {
       ul {
@@ -60,6 +63,13 @@
       h2 {
         font-size: 1.5rem;
       }
+    }
+  }
+
+  #about {
+    p {
+      text-align: center;
+      min-width: 100%;
     }
   }
 }

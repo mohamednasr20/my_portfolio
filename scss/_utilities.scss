@@ -6,6 +6,18 @@
   overflow: hidden;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  color: $main-color;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(-50px);
