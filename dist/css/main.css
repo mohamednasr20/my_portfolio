@@ -145,6 +145,10 @@
     text-align: center;
     min-width: 100%;
   }
+  #skills .container ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .p-1 {
@@ -346,6 +350,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   color: #fff;
@@ -522,6 +530,20 @@ img {
 #skills {
   background: #13151a;
   color: #f2f2f2;
-  height: 50vh;
+}
+
+#skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#skills ul li {
+  border: solid 2px #e05e50;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */

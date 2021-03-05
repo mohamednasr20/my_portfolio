@@ -72,4 +72,12 @@
       min-width: 100%;
     }
   }
+
+  #skills {
+    .container {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
