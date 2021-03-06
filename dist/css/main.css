@@ -16,9 +16,7 @@
 
 .heading {
   color: #e05e50;
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 1rem 0;
+  font-size: 3rem;
 }
 
 .hidden {
@@ -370,7 +368,6 @@ ul {
 
 img {
   max-width: 100%;
-  height: 400px;
 }
 
 #main-nav {
@@ -512,15 +509,16 @@ img {
   color: #13151a;
 }
 
-#about h2 {
-  text-align: center;
-}
-
-#about p {
+#about .about-content {
   max-width: 50%;
 }
 
-#about .img img {
+#about .about-content h2 {
+  color: #e05e50;
+  font-size: 3rem;
+}
+
+#about img {
   -webkit-box-shadow: 15px 15px 0 -5px #e05e50;
   -mos-box-shadow: 15px 15px 0 -5px #e05e50;
   -ms-box-shadow: 15px 15px 0 -5px #e05e50;
@@ -532,18 +530,13 @@ img {
   color: #f2f2f2;
 }
 
-#skills ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1rem;
-  font-size: 1.5rem;
+#skills h3 {
   text-align: center;
+  color: #e05e50;
+  font-size: 2rem;
 }
 
-#skills ul li {
-  border: solid 2px #e05e50;
-  border-radius: 5px;
+#skills img {
+  height: 70px;
 }
 /*# sourceMappingURL=main.css.map */
