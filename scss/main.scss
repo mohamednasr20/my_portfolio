@@ -163,13 +163,21 @@ img {
   background: $dark-bg;
   color: $light-bg;
 
-  h3 {
+  h2 {
     text-align: center;
-    color: $main-color;
-    font-size: 2rem;
   }
-
-  img {
-    height: 70px;
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    .skills-box {
+      text-align: center;
+      i {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $secondary-color;
+      }
+    }
   }
 }

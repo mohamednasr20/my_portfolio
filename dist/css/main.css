@@ -139,11 +139,11 @@
   #home .header-content h2 {
     font-size: 1.5rem;
   }
-  #about p {
+  #about .container .about-content {
     text-align: center;
     min-width: 100%;
   }
-  #skills .container ul {
+  #skills .container .skills-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -530,13 +530,27 @@ img {
   color: #f2f2f2;
 }
 
-#skills h3 {
+#skills h2 {
   text-align: center;
-  color: #e05e50;
-  font-size: 2rem;
 }
 
-#skills img {
-  height: 70px;
+#skills .skills-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+#skills .skills-container .skills-box {
+  text-align: center;
+}
+
+#skills .skills-container .skills-box i {
+  font-size: 4rem;
+}
+
+#skills .skills-container .skills-box p {
+  font-size: 1.5rem;
+  color: #a5a5a5;
 }
 /*# sourceMappingURL=main.css.map */

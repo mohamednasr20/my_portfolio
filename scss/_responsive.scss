@@ -67,15 +67,18 @@
   }
 
   #about {
-    p {
-      text-align: center;
-      min-width: 100%;
+    .container {
+      .about-content {
+        text-align: center;
+
+        min-width: 100%;
+      }
     }
   }
 
   #skills {
     .container {
-      ul {
+      .skills-container {
         grid-template-columns: repeat(2, 1fr);
       }
     }
