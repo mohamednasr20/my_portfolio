@@ -17,6 +17,7 @@
 .heading {
   color: #e05e50;
   font-size: 3rem;
+  text-align: center;
 }
 
 .hidden {
@@ -146,6 +147,10 @@
   #skills .container .skills-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  #portfolio .container .cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -514,8 +519,7 @@ img {
 }
 
 #about .about-content h2 {
-  color: #e05e50;
-  font-size: 3rem;
+  text-align: left;
 }
 
 #about img {
@@ -552,5 +556,71 @@ img {
 #skills .skills-container .skills-box p {
   font-size: 1.5rem;
   color: #a5a5a5;
+}
+
+#portfolio {
+  background: #f2f2f2;
+}
+
+#portfolio .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+#portfolio .cards .flip-container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  cursor: pointer;
+}
+
+#portfolio .cards .flip-container .flipper {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+#portfolio .cards .flip-container .front,
+#portfolio .cards .flip-container .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 25px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 25px 5px rgba(0, 0, 0, 0);
+}
+
+#portfolio .cards .flip-container .front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+#portfolio .cards .flip-container .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background: #13151a;
+}
+
+#portfolio .cards .flip-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#portfolio .cards .flip-container:hover .flipper,
+#portfolio .cards .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#portfolio .cards .flip-container,
+#portfolio .cards .front,
+#portfolio .cards .back {
+  height: 300px;
 }
 /*# sourceMappingURL=main.css.map */
