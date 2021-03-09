@@ -82,6 +82,17 @@
 }
 
 @media (max-width: 1024px) {
+  #home .header-content {
+    margin-left: 4rem;
+  }
+  #skills .container .skills-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #portfolio .container .cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
   #contact .container .contact-box {
     width: 90%;
     min-width: auto;
@@ -106,7 +117,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   #contact .container .contact-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -179,6 +190,9 @@
   #main-nav .navbar .toggle .line3 {
     -webkit-transform: rotate(45deg) translate(-5px, -6px);
             transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #home .header-content {
+    margin-left: 0;
   }
   #home .header-content h3 {
     font-size: 1.5rem;
