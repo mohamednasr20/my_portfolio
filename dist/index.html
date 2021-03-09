@@ -9,6 +9,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
         <title>Mohamed Nasr web developer</title>
     </head>
 
@@ -68,7 +71,7 @@
 
 
         </section>
-        <section id="skills" class="py-6">
+        <section id="skills" class="py-8">
             <div class="container">
                 <h2 class="heading">Skills & Tools</h2>
                 <div class="skills-container m-4">
@@ -112,18 +115,12 @@
                         <i class="devicon-mongodb-plain-wordmark colored"></i>
                         <p>MongoDb</p>
                     </div>
-                    <div class="skills-box p-3">
-                        <i class="devicon-npm-original-wordmark colored"></i>
-                        <p>NPM</p>
-                    </div>
+
                     <div class="skills-box p-3">
                         <i class="devicon-git-plain colored"></i>
                         <p>Git</p>
                     </div>
-                    <div class="skills-box p-3">
-                        <i class="devicon-webpack-plain colored"></i>
-                        <p>Webpack</p>
-                    </div>
+
                     <div class="skills-box p-3">
                         <i class="devicon-materialui-plain colored"></i>
                         <p>Material-ui</p>
@@ -131,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="py-4">
+        <section id="portfolio" class="py-8">
             <div class="container">
                 <h2 class="heading">Portfolio</h2>
                 <div class="cards p-4">
@@ -227,6 +224,63 @@
                         </div>
                     </div>
                 </div>
+        </section>
+        <section id="contact" class="py-8">
+            <div class="container">
+                <h2 class="heading">Get In Touch</h2>
+                <div class="contact-box flex my-4">
+                    <div class="contact-info p-4 flex">
+                        <div>
+                            <h2>Contact Info</h2>
+                            <ul class="info py-3    ">
+                                <li class=" py-3">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <span>8777 19th Ave Brooklyn Ny 11214</span>
+                                </li>
+                                <li class="py-3"><i class="fas fa-envelope-open-text fa-2x"></i>
+                                    <span>mohamednasr8687@gmail.com</span>
+                                </li>
+                                <li class="py-3">
+                                    <i class="fas fa-phone fa-2x"></i>
+                                    <span>1347-662-7755</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <ul class="flex">
+                                <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li><a href=""><i class="fab fa-github fa-2x"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Send A Message</h2>
+                        <form class="form-box" action="">
+                            <div class="input-box w50">
+                                <input class="py-1" type="text" name="firstName" required>
+                                <span class="py-1">First Name</span>
+                            </div>
+                            <div class="input-box w50">
+                                <input class="py-1" type="text" name="lastName" required>
+                                <span class="py-1">Last Name</span>
+                            </div>
+                            <div class="input-box w100">
+                                <input class="py-1" type="email" name="email" required>
+                                <span class="py-1">Email Adress</span>
+                            </div>
+                            <div class="input-box w100">
+                                <textarea class="py-1" name="message" required></textarea>
+                                <span class="py-1">Write your message here...</span>
+                            </div>
+                            <div class="input-box ">
+                                <input class="btn-dark w50" type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <script src="app.js"></script>
     </body>
