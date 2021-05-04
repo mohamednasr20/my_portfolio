@@ -219,6 +219,10 @@ img {
       .back {
         transform: rotateY(180deg);
         background: $dark-bg;
+
+        a {
+          color: inherit;
+        }
       }
       img {
         width: 100%;
@@ -234,7 +238,7 @@ img {
     .flip-container,
     .front,
     .back {
-      height: 300px;
+      height: 250px;
     }
   }
 }
