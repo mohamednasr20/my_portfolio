@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamednasr20/my_portfolio.git"
+  },
+  "author": "\"Mohamed Nasr\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamednasr20/my_portfolio/issues"
+  },
+  "homepage": "https://github.com/mohamednasr20/my_portfolio#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
