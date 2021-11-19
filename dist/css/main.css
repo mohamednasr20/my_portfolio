@@ -134,12 +134,17 @@
     #home .header-content h2 {
       font-size: 1.5rem; }
   #about .container .about-content {
-    text-align: center;
     min-width: 100%; }
   #skills .container .skills-container {
+    margin: 'auto';
     grid-template-columns: repeat(2, 1fr); }
   #portfolio .container .cards {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  #contact .container .contact-box {
+    width: 100%;
+    margin: 0; }
+  #contact .contact-form .w50 {
+    width: 100%; } }
 
 .p-1 {
   padding: 0.5rem; }
@@ -408,6 +413,7 @@ img {
     text-align: center; }
   #skills .skills-container {
     display: grid;
+    margin-top: 4rem;
     grid-template-columns: repeat(4, 1fr); }
     #skills .skills-container .skills-box {
       text-align: center; }
