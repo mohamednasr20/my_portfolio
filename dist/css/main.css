@@ -142,9 +142,7 @@
     grid-template-columns: repeat(1, 1fr); }
   #contact .container .contact-box {
     width: 100%;
-    margin: 0; }
-  #contact .contact-form .w50 {
-    width: 100%; } }
+    margin: 0; } }
 
 .p-1 {
   padding: 0.5rem; }
